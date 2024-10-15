@@ -625,6 +625,7 @@ body._lock {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 18px;
 }
 
 .modal__cats:not(:last-child) {
@@ -1165,7 +1166,6 @@ body._lock {
   border-radius: 20px 20px 0 0;
   overflow: hidden;
   margin-bottom: 12px;
-  max-height: 180px;
   background: var(--bg);
 }
 
