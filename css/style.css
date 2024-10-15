@@ -990,7 +990,7 @@ body._lock {
   width: 100%;
   height: 2px;
   background: #767676;
-  transition: opacity 0s ease 0.1s;
+  transition: opacity 0s ease 0.1s, background 0.5s ease;
 }
 
 .header__menu-icon::before {
@@ -1002,7 +1002,7 @@ body._lock {
   height: 2px;
   width: 100%;
   background: #767676;
-  transition: transform 0.2s ease, top 0.2s ease 0.2s;
+  transition: transform 0.2s ease, top 0.2s ease 0.2s, background 0.5s ease;
 }
 
 .header__menu-icon::after {
@@ -1014,7 +1014,7 @@ body._lock {
   height: 2px;
   width: 100%;
   background: #767676;
-  transition: transform 0.2s ease, top 0.2s ease 0.2s, width 0s ease 0.2s;
+  transition: transform 0.2s ease, top 0.2s ease 0.2s, background 0.5s ease;
 }
 
 .header__menu-icon._active span {
@@ -1537,6 +1537,12 @@ body._lock {
 
   .header__btn:hover svg {
     fill: var(--red);
+  }
+
+  .header__menu-icon:hover span,
+  .header__menu-icon:hover::before,
+  .header__menu-icon:hover::after {
+    background: var(--red);
   }
 
   .menu__link:hover {
