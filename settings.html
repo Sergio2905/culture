@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Culture Force</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241022144959">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__body">
+            <a href="/" class="header__logo">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+            <div class="header__menu menu">
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Events</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./venues.html" class="menu__link">Venues</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="organizations.html" class="menu__link">Organizations</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./about.html" class="menu__link">About Us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./settings.html" class="menu__link">Profile</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__options">
+                <button type="button" class="header__btn" data-modal="search">
+                    <svg>
+                        <use href="img/icons/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <a href="./bookmarks.html" class="header__btn">
+                    <svg>
+                        <use href="img/icons/icons.svg#heart"></use>
+                    </svg>
+                </a>
+                <button type="button" class="header__btn" data-modal="reg">
+                    <svg>
+                        <use href="img/icons/icons.svg#person"></use>
+                    </svg>
+                </button>
+            </div>
+            <button type="button" class="header__menu-icon">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+        <div class="page">
+
+            <div class="settings">
+                <div class="settings__container container">
+                    <div class="settings__body">
+                        <div class="settings__block">
+                            <h2 class="settings__title">User Info</h2>
+                            <form action="#" class="settings__form">
+                                <div class="settings__input">
+                                    <span class="settings__label">Email</span>
+                                    <input type="text" value="oliver2987@gmail.com">
+                                </div>
+                                <div class="settings__input">
+                                    <span class="settings__label">First Name</span>
+                                    <input type="text" value="Oliver">
+                                </div>
+                                <div class="settings__input">
+                                    <span class="settings__label">Last Name</span>
+                                    <input type="text" value="Benek">
+                                </div>
+                                <button type="submit" class="settings__btn">Save Changes</button>
+                            </form>
+                        </div>
+                        <div class="settings__block">
+                            <h2 class="settings__title">Change Password</h2>
+                            <form action="#" class="settings__form">
+                                <div class="settings__input">
+                                    <span class="settings__label">Current Password</span>
+                                    <input type="password">
+                                </div>
+                                <div class="settings__input">
+                                    <span class="settings__label">New Password</span>
+                                    <input type="password">
+                                </div>
+                                <div class="settings__input">
+                                    <span class="settings__label">Confirm New Password</span>
+                                    <input type="password">
+                                </div>
+                                <button type="submit" class="settings__btn">Save Changes</button>
+                            </form>
+                        </div>
+                        <div class="settings__block">
+                            <h2 class="settings__title">Search Preferences</h2>
+                            <form action="#" class="settings__form">
+                                <div class="settings__input">
+                                    <span class="settings__label">Region</span>
+                                    <div class="settings__select select">
+                                        <div class="select__container">
+                                            <div class="select__option">
+                                                <input type="radio" id="option1" name="name">
+                                                <label for="option1">Not set</label>
+                                            </div>
+                                            <div class="select__option">
+                                                <input type="radio" id="option2" name="name">
+                                                <label for="option2">Option1</label>
+                                            </div>
+                                            <div class="select__option">
+                                                <input type="radio" id="option1" name="name">
+                                                <label for="option2">Option1</label>
+                                            </div>
+                                        </div>
+                                        <div class="select__checked">
+                                            Not set
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="settings__input">
+                                    <span class="settings__label">Radius</span>
+                                    <div class="settings__select select">
+                                        <div class="select__container">
+                                            <div class="select__option">
+                                                <input type="radio" id="option1" name="name">
+                                                <label for="option1">Not set</label>
+                                            </div>
+                                            <div class="select__option">
+                                                <input type="radio" id="option2" name="name">
+                                                <label for="option2">Option1</label>
+                                            </div>
+                                            <div class="select__option">
+                                                <input type="radio" id="option1" name="name">
+                                                <label for="option2">Option1</label>
+                                            </div>
+                                        </div>
+                                        <div class="select__checked">
+                                            Not set
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="settings__btn">Save Changes</button>
+                            </form>
+                        </div>
+                        <div class="settings__block">
+                            <h2 class="settings__title">Notifications</h2>
+                            <div class="settings__item">
+                                <div type="button" class="settings__name">Notify when selected event starts</div>
+                                <button class="settings__switcher active"></button>
+                            </div>
+                            <div class="settings__item">
+                                <div type="button" class="settings__name">Notify about new events</div>
+                                <button class="settings__switcher"></button>
+                            </div>
+                            <div class="settings__item">
+                                <div class="settings__name">Notify about nearby events</div>
+                                <button type="button" class="settings__switcher"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__main">
+                <a href="/" class="footer__logo">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <a href="tel:3058781144" class="footer__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#phone"></use>
+                    </svg>
+                    305-878-11-44
+                </a>
+                <a href="mailto:info@cultureforce.us" class="footer__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#mail"></use>
+                    </svg>
+                    info@cultureforce.us
+                </a>
+            </div>
+            <div class="footer__menus">
+                <div class="footer__menu menu-footer">
+                    <h3 class="menu-footer__title">Navigation</h3>
+                    <nav class="menu-footer__body">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Events</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Venues</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Organizations</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__menu menu-footer">
+                    <h3 class="menu-footer__title">Follow Us</h3>
+                    <nav class="menu-footer__body">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Instagram</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Facebook</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__menu menu-footer">
+                    <h3 class="menu-footer__title">Top Locations</h3>
+                    <nav class="menu-footer__body">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">New York</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Miami</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Los Angeles</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Chicago</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">San Francisco</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <div class="modal" id="reg">
+    <div class="modal__wrapper">
+        <div class="modal__content auth">
+            <button type="button" class="auth__close modal__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="auth__title">Sign Up</h2>
+            <form action="#" class="auth__form">
+                <div class="auth__input auth__input_mail">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="auth__input auth__input_pass">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="auth__input auth__input_pass">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <button type="submit" class="auth__btn">Sign in</button>
+            </form>
+            <div class="auth__options">
+                <p class="auth__or"><span>or</span></p>
+                <div class="auth__socials">
+                    <a href="#" class="auth__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#facebook2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="auth__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#google"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="auth__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#apple"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="auth__link" data-modal="login">I have an account</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="login">
+    <div class="modal__wrapper">
+        <div class="modal__content auth">
+            <button type="button" class="auth__close modal__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="auth__title">Log In</h2>
+            <form action="#" class="auth__form">
+                <div class="auth__input auth__input_mail">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="auth__input auth__input_pass">
+                    <input type="password" placeholder="Password">
+                </div>
+                <a href="#" class="auth__forgot" data-modal="recover">Forgot Password?</a>
+                <button type="submit" class="auth__btn">Log in</button>
+            </form>
+            <div class="auth__options">
+                <p class="auth__or"><span>or</span></p>
+                <div class="auth__socials">
+                    <a href="#" class="auth__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#facebook2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="auth__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#google"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="auth__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#apple"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="auth__link" data-modal="reg">Create account</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="recover">
+    <div class="modal__wrapper">
+        <div class="modal__content auth">
+            <button type="button" class="auth__close modal__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="auth__title">Forgot Password?</h2>
+            <p class="auth__text">Enter your email adress to receive a temporary password</p>
+            <form action="#" class="auth__form">
+                <div class="auth__input auth__input_mail">
+                    <input type="text" placeholder="Email">
+                </div>
+                <button type="submit" class="auth__btn">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="event">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__options">
+                    <button type="button" class="modal__like">
+                        <svg>
+                            <use href="img/icons/icons.svg#heart"></use>
+                        </svg>
+                        <svg>
+                            <use href="img/icons/icons.svg#heart-fill"></use>
+                        </svg>
+                    </button>
+                    <a href="#" class="modal__option">
+                        <svg>
+                            <use href="img/icons/icons.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__image lazy">
+                <picture>
+                    <source data-srcset="img/modal/image1.webp" srcset="img/plug.png" type="image/webp">
+                    <img data-src="img/modal/image1.jpg" src="img/plug.png" alt="Image">
+                </picture>
+            </div>
+            <div class="modal__body">
+                <div class="modal__desc desc-modal">
+                    <h2 class="desc-modal__title">Rock Music Festival</h2>
+                    <ul class="desc-modal__list">
+                        <li class="desc-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#location"></use>
+                            </svg>
+                            Maryland, United States
+                        </li>
+                        <li class="desc-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#calendar"></use>
+                            </svg>
+                            Sun, Sept 22, 2024
+                        </li>
+                        <li class="desc-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#clock"></use>
+                            </svg>
+                            7:00, 8:00, 9:00
+                        </li>
+                        <li class="desc-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#sand"></use>
+                            </svg>
+                            2 hours
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__cats">
+                    <a href="#" class="modal__btn btn-gray">Festivals</a>
+                    <a href="#" class="modal__btn btn-gray">Music</a>
+                </div>
+                <div class="modal__info info-modal">
+                    <div class="info-modal__text">
+                        <p>Rock Fest is where music meets freedom. </p>
+                        <p>
+                            Set in a stunning natural location, this rock fest brings
+                            together top bands for an unforgettable experience full of energy and passion.
+                        </p>
+                        <p>
+                            Dive into the vibe of
+                            live music and create memories that will last a lifetime!
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__place place-modal">
+                    <h3 class="place-modal__title">Venue:</h3>
+                    <div class="place-modal__body">
+                        <a href="#" class="place-modal__image lazy" data-modal="venue">
+                            <picture>
+                                <source data-srcset="img/events/image4.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/events/image4.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </a>
+                        <div class="place-modal__info">
+                            <a href="#" class="place-modal__name" data-modal="venue">Thunder Rock Fest Arena</a>
+                            <address class="place-modal__address">1620 12th Ave</address>
+                            <address class="place-modal__address">Seattle, Wa</address>
+                        </div>
+                        <a href="#" class="place-modal__btn" data-modal="venue">
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow2"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__place place-modal">
+                    <h3 class="place-modal__title">Organization:</h3>
+                    <div class="place-modal__body">
+                        <a href="#" class="place-modal__image lazy" data-modal="organization">
+                            <picture>
+                                <source data-srcset="img/events/image7.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/events/image7.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </a>
+                        <div class="place-modal__info">
+                            <a href="#" class="place-modal__name" data-modal="organization">StormSound Productions</a>
+                            <address class="place-modal__address">Pasadena, California</address>
+                            <address class="place-modal__address">3352 E. Foothill BVLD</address>
+                        </div>
+                        <a href="#" class="place-modal__btn" data-modal="organization">
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow2"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__btns">
+                    <a href="#" class="modal__btn btn-color">Show Schedule</a>
+                    <a href="#" class="modal__btn btn-red">Purchase Tickets Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="venue">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__options">
+                    <button type="button" class="modal__like">
+                        <svg>
+                            <use href="img/icons/icons.svg#heart"></use>
+                        </svg>
+                        <svg>
+                            <use href="img/icons/icons.svg#heart-fill"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__image lazy">
+                <picture>
+                    <source data-srcset="img/modal/image2.webp" srcset="img/plug.png" type="image/webp">
+                    <img data-src="img/modal/image2.jpg" src="img/plug.png" alt="Image">
+                </picture>
+            </div>
+            <div class="modal__body">
+                <div class="modal__about about-modal">
+                    <h2 class="about-modal__title">Fox Theatre</h2>
+                    <address class="about-modal__address">2343 S.3rd St</address>
+                    <address class="about-modal__address">Philadelphia, Pennsylvania 1755</address>
+                </div>
+                <div class="modal__btns">
+                    <a href="#" class="modal__btn btn-simple">Open in Google Maps</a>
+                    <a href="#" class="modal__btn btn-red">Get Directions</a>
+                </div>
+                <div class="modal__events events-modal">
+                    <h3 class="events-modal__title">Upcoming Events</h3>
+                    <div class="events-modal__item">
+                        <div class="events-modal__image lazy">
+                            <picture>
+                                <source data-srcset="img/events/image1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/events/image1.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="events-modal__info">
+                            <a href="#" class="events-modal__name">Performance "Incredible love story"</a>
+                            <div class="events-modal__location">
+                                <svg>
+                                    <use href="img/icons/icons.svg#location"></use>
+                                </svg>
+                                First Theatre, Chicago
+                            </div>
+                            <div class="events-modal__date">
+                                <svg>
+                                    <use href="img/icons/icons.svg#calendar"></use>
+                                </svg>
+                                11/12/2024 - 05/05/2025
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events-modal__item">
+                        <div class="events-modal__image lazy">
+                            <picture>
+                                <source data-srcset="img/events/image2.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/events/image2.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="events-modal__info">
+                            <a href="#" class="events-modal__name">Performance "Incredible love story"</a>
+                            <div class="events-modal__location">
+                                <svg>
+                                    <use href="img/icons/icons.svg#location"></use>
+                                </svg>
+                                First Theatre, Chicago
+                            </div>
+                            <div class="events-modal__date">
+                                <svg>
+                                    <use href="img/icons/icons.svg#calendar"></use>
+                                </svg>
+                                11/12/2024 - 05/05/2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__info info-modal">
+                    <h2 class="info-modal__title">Description</h2>
+                    <div class="info-modal__text">
+                        <p>
+                            Fox Theater is a historic gem in the heart of the city, renowned for its majestic
+                            architecture
+                            and exceptional atmosphere.
+                        </p>
+
+                        <p>
+                            Built in the 1920s, this theater blends classic style with modern
+                            amenities, making it the perfect venue for performances, concerts, and cultural events.
+                        </p>
+
+                        <p>
+                            Fox
+                            Theater is where art comes to life, leaving a lasting impression on every visitor.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__contacts contacts-modal">
+                    <h3 class="contacts-modal__title">Contacts</h3>
+                    <ul class="contacts-modal__list">
+                        <li class="contacts-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:2156729462" class="contacts-modal__link">(215) 672-94-62</a>
+                        </li>
+                        <li class="contacts-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#mail"></use>
+                            </svg>
+                            <a href="mailto:info@foxtheatre.org" class="contacts-modal__link">info@foxtheatre.org</a>
+                        </li>
+                        <li class="contacts-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#link"></use>
+                            </svg>
+                            <a href="#" class="contacts-modal__link">https://www.foxtheatre.org</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__socials socials-modal">
+                    <a href="#" class="socials-modal__link" target="_blank">
+                        <svg>
+                            <use href="img/icons/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-modal__link" target="_blank">
+                        <svg>
+                            <use href="img/icons/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-modal__link" target="_blank">
+                        <svg>
+                            <use href="img/icons/icons.svg#youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-modal__link">
+                        <svg>
+                            <use href="img/icons/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="organization">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__options">
+                    <button type="button" class="modal__like">
+                        <svg>
+                            <use href="img/icons/icons.svg#heart"></use>
+                        </svg>
+                        <svg>
+                            <use href="img/icons/icons.svg#heart-fill"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__image lazy">
+                <picture>
+                    <source data-srcset="img/modal/image3.webp" srcset="img/plug.png" type="image/webp">
+                    <img data-src="img/modal/image3.jpg" src="img/plug.png" alt="Image">
+                </picture>
+            </div>
+            <div class="modal__body">
+                <div class="modal__about about-modal">
+                    <h2 class="about-modal__title">18 12 Productions</h2>
+                    <address class="about-modal__address">2329 S.3rd St</address>
+                    <address class="about-modal__address">Philadelphia, Pennsylvania 1755</address>
+                </div>
+                <div class="modal__events events-modal">
+                    <h3 class="events-modal__title">Upcoming Events</h3>
+                    <div class="events-modal__item">
+                        <div class="events-modal__image lazy">
+                            <picture>
+                                <source data-srcset="img/events/image1.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/events/image1.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="events-modal__info">
+                            <a href="#" class="events-modal__name">Performance "Incredible love story"</a>
+                            <div class="events-modal__location">
+                                <svg>
+                                    <use href="img/icons/icons.svg#location"></use>
+                                </svg>
+                                First Theatre, Chicago
+                            </div>
+                            <div class="events-modal__date">
+                                <svg>
+                                    <use href="img/icons/icons.svg#calendar"></use>
+                                </svg>
+                                11/12/2024 - 05/05/2025
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events-modal__item">
+                        <div class="events-modal__image lazy">
+                            <picture>
+                                <source data-srcset="img/events/image2.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/events/image2.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="events-modal__info">
+                            <a href="#" class="events-modal__name">Performance "Incredible love story"</a>
+                            <div class="events-modal__location">
+                                <svg>
+                                    <use href="img/icons/icons.svg#location"></use>
+                                </svg>
+                                First Theatre, Chicago
+                            </div>
+                            <div class="events-modal__date">
+                                <svg>
+                                    <use href="img/icons/icons.svg#calendar"></use>
+                                </svg>
+                                11/12/2024 - 05/05/2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__info info-modal">
+                    <h2 class="info-modal__title">Description</h2>
+                    <div class="info-modal__text">
+                        <p>
+                            1812 Productions was founded in 1997 by Jennifer Childs and Peter Pryor, two long-time
+                            friends
+                            and artistic collaborators, with a dedication to comedy, theater, accessibility and
+                            Philadelphia
+                            artists.
+                        </p>
+                        <p>
+                            In 1998 the company premiered with The Compleat Works of Wilm Shkspr (abridged) and was
+                            promptly named "Best of Philly - Theater in Infancy" by Philadelphia Magazine.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__contacts contacts-modal">
+                    <h3 class="contacts-modal__title">Contacts</h3>
+                    <ul class="contacts-modal__list">
+                        <li class="contacts-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:2156729462" class="contacts-modal__link">(215) 672-94-62</a>
+                        </li>
+                        <li class="contacts-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#mail"></use>
+                            </svg>
+                            <a href="mailto:info@foxtheatre.org" class="contacts-modal__link">info@foxtheatre.org</a>
+                        </li>
+                        <li class="contacts-modal__item">
+                            <svg>
+                                <use href="img/icons/icons.svg#link"></use>
+                            </svg>
+                            <a href="#" class="contacts-modal__link">https://www.foxtheatre.org</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__socials socials-modal">
+                    <a href="#" class="socials-modal__link" target="_blank">
+                        <svg>
+                            <use href="img/icons/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-modal__link" target="_blank">
+                        <svg>
+                            <use href="img/icons/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-modal__link" target="_blank">
+                        <svg>
+                            <use href="img/icons/icons.svg#youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-modal__link">
+                        <svg>
+                            <use href="img/icons/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="search">
+    <div class="modal__wrapper">
+        <div class="modal__content search">
+            <div class="search__body">
+                <form action="#" class="search__form">
+                    <input class="search__input" type="text" placeholder="Search for events...">
+                    <!-- <button type="submit" class="search__submit btn-red">Search</button> -->
+                    <a href="./results.html" class="search__submit btn-red">Search</a>
+                </form>
+            </div>
+            <div class="search__tabs tabs">
+                <div class="tabs__header">
+                    <a href="#search-event" class="tabs__link active">Event</a>
+                    <a href="#search-venue" class="tabs__link">Venue</a>
+                    <a href="#search-organisation" class="tabs__link">Organization</a>
+                </div>
+                <div class="tabs__body">
+                    <div id="search-event" class="tabs__block active">
+                        <div class="search__block">
+                            <div class="search__option">
+                                <h2 class="search__title">Date</h2>
+                                <div class="search__date">
+                                    <input type="text" placeholder="Select Date" />
+                                    <div class="search__calendar"></div>
+                                </div>
+                            </div>
+                            <div class="search__option">
+                                <h2 class="search__title">Location</h2>
+                                <div class="search__select select">
+                                    <div class="select__container">
+                                        <div class="select__option">
+                                            <input type="radio" id="option1" name="location">
+                                            <label for="option1">Manhattan</label>
+                                        </div>
+                                        <div class="select__option">
+                                            <input type="radio" id="option2" name="location">
+                                            <label for="option2">New York</label>
+                                        </div>
+                                        <div class="select__option">
+                                            <input type="radio" id="option3" name="location">
+                                            <label for="option3">Central New York City</label>
+                                        </div>
+                                        <div class="select__option">
+                                            <input type="radio" id="option4" name="location">
+                                            <label for="option4">New York Central Park</label>
+                                        </div>
+                                        <div class="select__option">
+                                            <input type="radio" id="option5" name="location">
+                                            <label for="option5">York Beach</label>
+                                        </div>
+                                    </div>
+                                    <div class="select__checked">
+                                        Location
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__block">
+                            <div class="search__option">
+                                <h2 class="search__title">Distance</h2>
+                                <div class="search__checks">
+                                    <div class="search__checkbox checkbox active">
+                                        Less than 2 mi
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        2-5 mi
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        5-10 mi
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        10-20 mi
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        20-50 mi
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        More than 50 mi
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__block">
+                            <div class="search__option">
+                                <h2 class="search__title">Category</h2>
+                                <div class="search__checks">
+                                    <div class="search__checkbox checkbox active">
+                                        Attractions
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Ballet
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Dance
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Music
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Theatre
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Museum
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__block">
+                            <div class="search__option">
+                                <h2 class="search__title">More Options</h2>
+                                <div class="search__checks">
+                                    <div class="search__checkbox checkbox active">
+                                        Attractions
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Ballet
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Dance
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Music
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Theatre
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                    <div class="search__checkbox checkbox">
+                                        Museum
+                                        <input type="checkbox" name="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="search__more">
+                            <span>View more...</span>
+                            <span>View less...</span>
+                        </button>
+                    </div>
+                    <div id="search-venue" class="tabs__block">
+                        2
+                    </div>
+                    <div id="search-organisation" class="tabs__block">
+                        3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20241022144959"></script>
+</body>
+
+</html>
