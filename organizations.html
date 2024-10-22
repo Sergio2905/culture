@@ -5,7 +5,7 @@
     <title>Culture Force</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20241022144959">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241022182939">
 </head>
 
 <body>
@@ -373,6 +373,34 @@
                     <input type="text" placeholder="Email">
                 </div>
                 <button type="submit" class="auth__btn">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="change">
+    <div class="modal__wrapper">
+        <div class="modal__content change">
+            <button type="button" class="change__close modal__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="change__title">Change Password</h2>
+            <form action="#" class="change__form">
+                <div class="change__input">
+                    <span class="change__label">Current Password</span>
+                    <input type="password">
+                </div>
+                <div class="change__input">
+                    <span class="change__label">New Password</span>
+                    <input type="password">
+                </div>
+                <div class="change__input">
+                    <span class="change__label">Confirm New Password</span>
+                    <input type="password">
+                </div>
+                <button type="submit" class="change__btn">Save</button>
             </form>
         </div>
     </div>
@@ -815,7 +843,6 @@
             <div class="search__body">
                 <form action="#" class="search__form">
                     <input class="search__input" type="text" placeholder="Search for events...">
-                    <!-- <button type="submit" class="search__submit btn-red">Search</button> -->
                     <a href="./results.html" class="search__submit btn-red">Search</a>
                 </form>
             </div>
@@ -975,7 +1002,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20241022144959"></script>
+    <script src="js/app.min.js?_v=20241022182939"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <title>Culture Force</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20241022144959">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241022182939">
 </head>
 
 <body>
@@ -69,10 +69,11 @@
 
             <div class="settings">
                 <div class="settings__container container">
-                    <div class="settings__body">
+                    <h2 class="settings__title">Settings</h2>
+                    <form action="#" class="settings__body">
                         <div class="settings__block">
-                            <h2 class="settings__title">User Info</h2>
-                            <form action="#" class="settings__form">
+                            <h3 class="settings__subtitle">Personal Info</h3>
+                            <div class="settings__form">
                                 <div class="settings__input">
                                     <span class="settings__label">Email</span>
                                     <input type="text" value="oliver2987@gmail.com">
@@ -85,30 +86,11 @@
                                     <span class="settings__label">Last Name</span>
                                     <input type="text" value="Benek">
                                 </div>
-                                <button type="submit" class="settings__btn">Save Changes</button>
-                            </form>
+                            </div>
                         </div>
                         <div class="settings__block">
-                            <h2 class="settings__title">Change Password</h2>
-                            <form action="#" class="settings__form">
-                                <div class="settings__input">
-                                    <span class="settings__label">Current Password</span>
-                                    <input type="password">
-                                </div>
-                                <div class="settings__input">
-                                    <span class="settings__label">New Password</span>
-                                    <input type="password">
-                                </div>
-                                <div class="settings__input">
-                                    <span class="settings__label">Confirm New Password</span>
-                                    <input type="password">
-                                </div>
-                                <button type="submit" class="settings__btn">Save Changes</button>
-                            </form>
-                        </div>
-                        <div class="settings__block">
-                            <h2 class="settings__title">Search Preferences</h2>
-                            <form action="#" class="settings__form">
+                            <h3 class="settings__subtitle">Search Preferences</h3>
+                            <div class="settings__form">
                                 <div class="settings__input">
                                     <span class="settings__label">Region</span>
                                     <div class="settings__select select">
@@ -153,11 +135,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="settings__btn">Save Changes</button>
-                            </form>
+                            </div>
                         </div>
                         <div class="settings__block">
-                            <h2 class="settings__title">Notifications</h2>
+                            <h3 class="settings__subtitle">Notifications</h3>
                             <div class="settings__item">
                                 <div type="button" class="settings__name">Notify when selected event starts</div>
                                 <button class="settings__switcher active"></button>
@@ -171,7 +152,9 @@
                                 <button type="button" class="settings__switcher"></button>
                             </div>
                         </div>
-                    </div>
+                        <button type="button" class="settings__change" data-modal="change">Change Password</button>
+                        <button type="submit" class="settings__btn">Save Changes</button>
+                    </form>
                 </div>
             </div>
 
@@ -363,6 +346,34 @@
                     <input type="text" placeholder="Email">
                 </div>
                 <button type="submit" class="auth__btn">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="change">
+    <div class="modal__wrapper">
+        <div class="modal__content change">
+            <button type="button" class="change__close modal__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="change__title">Change Password</h2>
+            <form action="#" class="change__form">
+                <div class="change__input">
+                    <span class="change__label">Current Password</span>
+                    <input type="password">
+                </div>
+                <div class="change__input">
+                    <span class="change__label">New Password</span>
+                    <input type="password">
+                </div>
+                <div class="change__input">
+                    <span class="change__label">Confirm New Password</span>
+                    <input type="password">
+                </div>
+                <button type="submit" class="change__btn">Save</button>
             </form>
         </div>
     </div>
@@ -805,7 +816,6 @@
             <div class="search__body">
                 <form action="#" class="search__form">
                     <input class="search__input" type="text" placeholder="Search for events...">
-                    <!-- <button type="submit" class="search__submit btn-red">Search</button> -->
                     <a href="./results.html" class="search__submit btn-red">Search</a>
                 </form>
             </div>
@@ -965,7 +975,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20241022144959"></script>
+    <script src="js/app.min.js?_v=20241022182939"></script>
 </body>
 
 </html>
